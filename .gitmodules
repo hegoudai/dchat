@@ -1,0 +1,6 @@
+[submodule "dchat-server"]
+	path = dchat-server
+	url = https://github.com/hegoudai/dchat-server.git
+[submodule "dchat-client"]
+	path = dchat-client
+	url = https://github.com/hegoudai/dchat-client.git
