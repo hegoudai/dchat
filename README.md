@@ -1,17 +1,18 @@
-# dchat-client
-A decentralized multiplatform (only web and android tested) chat client using ECDH to transfer message. It is a project inspired by blockchain. As we know, we share our blockchain address on the internet, others can transfer decentralized coin through the address. Likewise, in this project, you share your uri on the internet, people can talk to you safely and anonymously through the uri.
+# dchat
+A decentralized multiplatform chat software using ECDH to transfer message.
+
 ## Usage
+### 1. Find a server
+You have to find a dchat-server shared by others or deploy your own dchat-server,
+What you really need to get is an ip address or a host, like this: 47.106.144.145
 
-### User config
- To use this client, a deployed dchat server instance is needed. You can deploy your own server, it's pretty easy by using docker, see [server repository](https://github.com/hegoudai/dchat_server).
-### My URI
-DChat client use dc uri to locate the user.After completing your user config, you can get your uri by clicking the My URI menu item.
-Here is an example:
-`dc://hegoudai@47.106.144.145/BN7-lwTfMw09OVweh2-o2LjBAQaO9WinnTmlg1XE3kO8`
+### 2. Share your URI 
+After configuring your server in dchat-client app, you will get an uri like this: dc://hegoudai@47.106.144.145/BN7-lwTfMw09OVweh2-o2LjBAQaO9WinnTmlg1XE3kO8,
+share it and wait some talking to you.
 
-Obviously, It simply consits of the custom scheme "dc", the user name "hegoudai", the server "47.106.144.145" and the base64Url-encoded ec publickey point "BN7-lwTfMw09OVweh2-o2LjBAQaO9WinnTmlg1XE3kO8"
-### New Chat
-You can start a new chat by using this uri in the client, or you can just click the uri and start a safe coversation if this client is installed on your phone(only android tested). 
+### 3. Start chat
+Start a new chat by using the uri you get from somewhere, every message is encrypted, so feel free to talk!
+
 ## Contributing
 Pull requests are welcome. 
 For major changes, please open an issue first to discuss what you would like to change.
